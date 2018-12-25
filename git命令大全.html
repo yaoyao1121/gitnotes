@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><title>Untitled</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<p>git常用命令大全 </p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs cs"><div class="hljs-line"><span class="hljs-number">1.</span>初始化本地git仓库（创建新仓库）
+</div><div class="hljs-line">    git init
+</div><div class="hljs-line"><span class="hljs-number">2.</span>clone远程仓库
+</div><div class="hljs-line">    git clone 地址
+</div><div class="hljs-line"><span class="hljs-number">3.</span>添加地址原点
+</div><div class="hljs-line">    git remote <span class="hljs-keyword">add</span> origin 地址
+</div><div class="hljs-line"><span class="hljs-number">4.</span>查看当前版本状态（是否修改）
+</div><div class="hljs-line">    git status
+</div><div class="hljs-line"><span class="hljs-number">5.</span>添加到本地缓存
+</div><div class="hljs-line">    git <span class="hljs-keyword">add</span> .           <span class="hljs-comment">//添加所有常用</span>
+</div><div class="hljs-line">    git <span class="hljs-keyword">add</span> 文件名       <span class="hljs-comment">//添加单个文件</span>
+</div><div class="hljs-line"><span class="hljs-number">6.</span>提交
+</div><div class="hljs-line">    git commit -m <span class="hljs-string">"添加备注"</span>     <span class="hljs-comment">//常用</span>
+</div><div class="hljs-line">    git commit --amend -m <span class="hljs-string">'xxx'</span>     <span class="hljs-comment">//合并上一次提交（用于反复修改）不常用</span>
+</div><div class="hljs-line"><span class="hljs-number">7.</span>将<span class="hljs-keyword">add</span>和commit合为一步 
+</div><div class="hljs-line">    git commit -am <span class="hljs-string">'xxx'</span>  
+</div><div class="hljs-line"><span class="hljs-number">8.</span>新建分支/推送到远程
+</div><div class="hljs-line">    git checkout -b 分支名称    <span class="hljs-comment">//在本地新建分支x，并自动切换到该本地分支x</span>
+</div><div class="hljs-line">    git push origin 本地分支名 : 远程分支名     <span class="hljs-comment">//远程没有此分支的时候用此命令 推送到远程分支</span>
+</div><div class="hljs-line"><span class="hljs-number">9</span>、查看分支  
+</div><div class="hljs-line">    git fetch    <span class="hljs-comment">//查看新分支</span>
+</div><div class="hljs-line">    git branch   <span class="hljs-comment">//查看本地分支</span>
+</div><div class="hljs-line">    git branch -a  <span class="hljs-comment">//查看本地及远程分支</span>
+</div><div class="hljs-line"><span class="hljs-number">10.</span>设置默认push当前分支
+</div><div class="hljs-line">     git config --<span class="hljs-keyword">global</span> push.<span class="hljs-keyword">default</span> <span class="hljs-string">"current"</span>
+</div><div class="hljs-line"><span class="hljs-number">11.</span>合并分支两步
+</div><div class="hljs-line">    git merge dev  合并指定分支到当前分支 dev为分支名称
+</div><div class="hljs-line">    git push origin  分支名称
+</div><div class="hljs-line"><span class="hljs-number">12.</span>删除分支及远程分支
+</div><div class="hljs-line">    git branch -d dev 删除分支本地分支
+</div><div class="hljs-line">    git branch -r -D origin/dev1 删除本地的远程分支
+</div><div class="hljs-line"><span class="hljs-number">13.</span>查看日志
+</div><div class="hljs-line">    git log
+</div><div class="hljs-line"><span class="hljs-number">14.</span>查看差异
+</div><div class="hljs-line">    git diff
+</div><div class="hljs-line"><span class="hljs-number">15.</span>git命令大全
+</div><div class="hljs-line">    https:<span class="hljs-comment">//mp.weixin.qq.com/s?__biz=MzAwNjI5MTYyMw==&amp;mid=2651494437&amp;idx=1&amp;sn=d88dc74a24305c0e69365094ae1e4b1d&amp;chksm=80f191edb78618fb86cfa5784d403f0774b1ac47a0c3b19280d16e5d954cd19b5e4e23af85d6&amp;scene=0&amp;key=8e7349a2eeff6e43903220471f96eb056446a05ed599c108938519b8134dff47ed6c39f3eb91aad978583d2cb114014de59113766d42ec38181dee163683deb57cbae97050cf77280a4dd9eea0b1f7e4&amp;ascene=0&amp;uin=MjAwODg0MjE2MA%3D%3D&amp;devicetype=iMac+Macmini7%2C1+OSX+OSX+10.10+build(14A389)&amp;version=12020110&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=PE4FcNApWvZeuKq3cE%2BAAppkHf8iYq%2FZThJTgAeDGiRYHtVfJE5QPHBJht9Jwq6f</span>
+</div></code></pre></div></body></html>
